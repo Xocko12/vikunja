@@ -43,6 +43,7 @@ export const SUPPORTED_LOCALES = {
 	'he-IL': 'עִבְרִית',
 	'sv-SE': 'Svenska',
 	'el-GR': 'Ελληνικά',
+	'gl-ES': 'Galego',
 	// IMPORTANT: Also add new languages to useDayjsLanguageSync
 	// IMPORTANT: Also add new languages to pkg/i18n/i18n.go
 } as const

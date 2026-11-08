@@ -35,6 +35,7 @@ export const DAYJS_LOCALE_MAPPING = {
 	'he-il': 'he',
 	'sv-se': 'sv',
 	'el-gr': 'el',
+	'gl-es': 'gl',
 } satisfies Record<Lowercase<Exclude<SupportedLocale, 'en'>>, ISOLanguage>
 
 export const DAYJS_LANGUAGE_IMPORTS = {
@@ -69,6 +70,7 @@ export const DAYJS_LANGUAGE_IMPORTS = {
 	'he-il': () => import('dayjs/locale/he'),
 	'sv-se': () => import('dayjs/locale/sv'),
 	'el-gr': () => import('dayjs/locale/el'),
+	'gl-es': () => import('dayjs/locale/gl'),
 } satisfies Record<Lowercase<Exclude<SupportedLocale, 'en'>>, () => Promise<unknown>>
 
 export async function loadDayJsLocale(language: SupportedLocale) {
