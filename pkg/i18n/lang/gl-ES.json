@@ -1,0 +1,203 @@
+{
+    "notifications": {
+        "greeting": "Ola, %[1]s:",
+        "email_confirm": {
+            "subject": "%[1]s, confirma o teu enderezo de correo electrónico en Vikunja",
+            "subject_new": "%[1]s + Vikunja = <3",
+            "welcome": "Benvido/a a Vikunja!",
+            "confirm": "Para confirmar o teu enderezo de correo electrónico, preme na ligazón de embaixo:"
+        },
+        "email_change": {
+            "subject": "Solicitouse un cambio de enderezo de correo electrónico para a túa conta de Vikunja",
+            "requested": "Alguén solicitou cambiar o enderezo de correo electrónico da túa conta a %[1]s. O teu enderezo actual seguirá activo ata que se confirme o novo.",
+            "warning": "Se non fuches ti, cambia o teu contrasinal inmediatamente e cancela o cambio pendente na configuración da túa conta."
+        },
+        "identity": {
+            "linked": {
+                "subject": "%[1]s vinculouse á túa conta de Vikunja",
+                "message": "A túa conta de %[1]s vinculouse á túa conta de Vikunja o %[2]s. Agora podes iniciar sesión con ela.",
+                "warning": "Se non fuches ti, cambia o teu contrasinal inmediatamente e despois desvincúlaa na configuración da túa conta."
+            }
+        },
+        "password": {
+            "changed": {
+                "subject": "Cambiouse o teu contrasinal de Vikunja",
+                "success": "O contrasinal da túa conta cambiouse correctamente.",
+                "warning": "Se non fuches ti, pode significar que alguén comprometeu a túa conta. Nese caso, ponte en contacto co administrador do teu servidor."
+            },
+            "reset": {
+                "subject": "Restablece o teu contrasinal de Vikunja",
+                "instructions": "Para restablecer o teu contrasinal, preme na ligazón de embaixo:",
+                "valid_duration": "Esta ligazón será válida durante 24 horas."
+            }
+        },
+        "totp": {
+            "invalid": {
+                "subject": "Alguén acaba de tentar iniciar sesión na túa conta de Vikunja, pero non o conseguiu",
+                "message": "Alguén acaba de tentar iniciar sesión na túa conta co nome de usuario e o contrasinal correctos, pero cun código TOTP incorrecto.",
+                "warning": "**Se non fuches ti, outra persoa coñece o teu contrasinal. Deberías establecer un novo inmediatamente!**"
+            },
+            "account_locked": {
+                "subject": "Desactivamos a túa conta de Vikunja",
+                "message": "Alguén tentou iniciar sesión coas túas credenciais, pero non proporcionou un código TOTP válido.",
+                "disabled": "Despois de 10 intentos fallidos, desactivamos a túa conta e restablecemos o teu contrasinal. Para establecer un novo, segue as instrucións do correo de restablecemento que che acabamos de enviar.",
+                "reset_instructions": "Se non recibiches un correo electrónico coas instrucións de restablecemento, sempre podes solicitar un novo en [%[1]s](%[2]s)."
+            }
+        },
+        "login": {
+            "failed": {
+                "subject": "Alguén acaba de tentar iniciar sesión na túa conta de Vikunja, pero non proporcionou un contrasinal correcto",
+                "message": "Alguén acaba de tentar iniciar sesión na túa conta cun contrasinal incorrecto tres veces seguidas.",
+                "warning": "Se non fuches ti, podería tratarse doutra persoa que tenta acceder á túa conta.",
+                "enhance_security": "Para mellorar a seguridade da túa conta, quizais queiras establecer un contrasinal máis seguro ou activar a autenticación TOTP na configuración:"
+            },
+            "account_locked": {
+                "message": "Alguén tentou iniciar sesión na túa conta cun contrasinal incorrecto demasiadas veces seguidas."
+            }
+        },
+        "account": {
+            "deletion": {
+                "confirm": {
+                    "subject": "Confirma a eliminación da túa conta de Vikunja",
+                    "request": "Solicitaches a eliminación da túa conta. Para confirmalo, preme na ligazón de embaixo:",
+                    "valid_duration": "Esta ligazón será válida durante 24 horas.",
+                    "schedule_info": "Unha vez que confirmes a eliminación, programaremos a eliminación da túa conta para dentro de tres días e enviarémosche outro correo electrónico antes diso.",
+                    "consequences": "Se continúas coa eliminación da túa conta, eliminaremos todos os proxectos e tarefas que creaches. Todo o que compartiches con outro usuario ou equipo pasará a ser da súa propiedade.",
+                    "changed_mind": "Se non solicitaches a eliminación ou cambiaches de opinión, simplemente ignora este correo electrónico."
+                },
+                "scheduled": {
+                    "subject_days": "A túa conta de Vikunja eliminarase dentro de %[1]s días",
+                    "subject_tomorrow": "A túa conta de Vikunja eliminarase mañá",
+                    "request_reminder": "Hai pouco solicitaches a eliminación da túa conta de Vikunja.",
+                    "deletion_time_days": "Eliminaremos a túa conta dentro de %[1]s días.",
+                    "deletion_time_tomorrow": "Eliminaremos a túa conta mañá.",
+                    "changed_mind": "Se cambiaches de opinión, simplemente preme na ligazón de embaixo para cancelar a eliminación e segue as instrucións que alí aparecen:"
+                },
+                "completed": {
+                    "subject": "Eliminouse a túa conta de Vikunja",
+                    "confirmation": "Tal como solicitaches, eliminamos a túa conta de Vikunja.",
+                    "permanent": "Esta eliminación é permanente. Se non creaches unha copia de seguranza e necesitas recuperar os teus datos agora, fala co teu administrador."
+                }
+            }
+        },
+        "task": {
+            "reminder": {
+                "subject": "Recordatorio de \"%[1]s\" (%[2]s)",
+                "message": "Este é un recordatorio amigable da tarefa \"%[1]s\" (%[2]s)."
+            },
+            "comment": {
+                "subject": "Re: %[1]s (%[2]s)",
+                "mentioned_subject": "%[1]s mencionoute nun comentario en \"%[2]s\" (%[3]s)"
+            },
+            "assigned": {
+                "subject_to_assignee": "Asignáronte a \"%[1]s\" (%[2]s)",
+                "message_to_assignee": "%[1]s asignoute a \"%[2]s\".",
+                "subject_to_others": "\"%[1]s\" (%[2]s) asignóuselle a %[3]s",
+                "message_to_others": "%[1]s asignoulle esta tarefa a %[2]s.",
+                "subject_to_others_self": "%[3]s asignouse a si mesmo/a \"%[1]s\" (%[2]s)",
+                "message_to_others_self": "%[1]s asignouse esta tarefa a si mesmo/a."
+            },
+            "deleted": {
+                "subject": "Eliminouse \"%[1]s\" (%[2]s)",
+                "message": "%[1]s eliminou a tarefa \"%[2]s\" (%[3]s)"
+            },
+            "created": {
+                "subject": "Creouse \"%[1]s\" (%[2]s)",
+                "message": "%[1]s creou a tarefa \"%[2]s\" (%[3]s)"
+            },
+            "mentioned": {
+                "subject_new": "%[1]s mencionoute nunha nova tarefa \"%[2]s\" (%[3]s)",
+                "subject": "%[1]s mencionoute nunha tarefa \"%[2]s\" (%[3]s)"
+            },
+            "overdue": {
+                "subject": "A tarefa \"%[1]s\" (%[2]s) está atrasada",
+                "message": "Este é un recordatorio amigable da tarefa \"%[1]s\" (%[2]s), que está atrasada %[3]s e aínda non está feita.",
+                "multiple_subject": "As túas tarefas atrasadas",
+                "multiple_message": "Tes tarefas atrasadas:",
+                "assigned_heading": "Asignadas a ti",
+                "followed_heading": "Tarefas que segues",
+                "overdue_since": "desde hai %[1]s",
+                "overdue_now": "agora",
+                "overdue": "atrasada %[1]s"
+            }
+        },
+        "project": {
+            "created": "%[1]s creou o proxecto \"%[2]s\""
+        },
+        "team": {
+            "member_added": {
+                "subject": "%[1]s engadiute ao equipo \"%[2]s\" en Vikunja",
+                "message": "%[1]s acaba de engadirte ao equipo %[2]s en Vikunja."
+            }
+        },
+        "data_export": {
+            "ready": {
+                "subject": "A exportación dos teus datos de Vikunja está lista",
+                "message": "A exportación dos teus datos de Vikunja está lista para descargar. Preme no botón de embaixo para descargala:",
+                "availability": "A descarga estará dispoñible durante os próximos 7 días."
+            }
+        },
+        "migration": {
+            "done": {
+                "subject": "Completouse a migración de %[1]s a Vikunja",
+                "imported": "Vikunja importou desde %[1]s todas as listas/proxectos, tarefas, notas, recordatorios e ficheiros aos que tes acceso.",
+                "have_fun": "Divírtete cos teus novos (vellos) proxectos!"
+            },
+            "failed": {
+                "subject": "Fallou a migración de %[1]s a Vikunja",
+                "message": "Parece que esta vez o traslado desde %[1]s non saíu como estaba previsto.",
+                "retry": "Pero non te preocupes! Simplemente téntao de novo empezando da mesma maneira que fixeches antes. Ás veces estes contratempos ocorren por fallos no lado de %[1]s, pero volver tentalo adoita resolvelo.",
+                "error": "Atopámonos cun pequeno erro polo camiño: `%[2]s`.",
+                "report": "Déixanos unha nota sobre isto [no foro](https://community.vikunja.io/) ou en calquera das canles habituais para que poidamos ver por que fallou.",
+                "working_on_it": "Temos a mensaxe de erro no noso radar e estamos a traballar para resolvelo axiña."
+            }
+        },
+        "api_token": {
+            "expiring": {
+                "week": {
+                    "subject": "O teu token da API \"%[1]s\" caduca pronto",
+                    "message": "O teu token da API \"%[1]s\" caducará o %[2]s (dentro de %[3]s). Se aínda o necesitas, crea un novo token antes de que caduque."
+                },
+                "day": {
+                    "subject": "O teu token da API \"%[1]s\" caduca mañá",
+                    "message": "O teu token da API \"%[1]s\" caducará o %[2]s (dentro de %[3]s). Se aínda o necesitas, crea un novo token antes de que caduque."
+                },
+                "action": "Xestionar tokens da API"
+            }
+        },
+        "common": {
+            "have_nice_day": "Que teñas un bo día!",
+            "copy_url": "Se o botón de enriba non funciona, copia o URL de embaixo e pégao na barra de enderezos do teu navegador:",
+            "actions": {
+                "open_task": "Abrir a tarefa en Vikunja",
+                "open_vikunja": "Abrir Vikunja",
+                "open_project": "Abrir o proxecto",
+                "open_team": "Abrir o equipo",
+                "download": "Descargar",
+                "reset_password": "Restablecer o teu contrasinal",
+                "go_to_settings": "Ir á configuración",
+                "confirm_email": "Confirmar o teu enderezo de correo electrónico",
+                "abort_deletion": "Cancelar a eliminación",
+                "confirm_account_deletion": "Confirmar a eliminación da miña conta",
+                "change_notification_settings_link": "Podes cambiar a configuración das túas notificacións [aquí](%[1]s).",
+                "left_comment": "%[1]s deixou un comentario",
+                "mentioned_you_comment": "%[1]s mencionoute nun comentario",
+                "mentioned_you": "%[1]s mencionoute",
+                "mentioned_you_new_task": "%[1]s mencionoute nunha nova tarefa"
+            }
+        }
+    },
+    "time": {
+        "since_years": "un ano|%[1]d anos",
+        "since_weeks": "unha semana|%[1]d semanas",
+        "since_days": "un día|%[1]d días",
+        "since_hours": "unha hora|%[1]d horas",
+        "since_minutes": "un minuto|%[1]d minutos",
+        "list_last_separator": "e"
+    },
+    "feeds": {
+        "notifications": {
+            "title": "Notificacións de Vikunja para %[1]s"
+        }
+    }
+}
